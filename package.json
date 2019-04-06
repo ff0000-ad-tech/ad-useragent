@@ -1,0 +1,36 @@
+{
+	"name": "@ff0000-ad-tech/ad-external",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "3.1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"pub": "np"
+	},
+	"engines": {
+		"node": ">=9.8.0",
+		"npm": ">=6.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ff0000-ad-tech/ad-external.git"
+	},
+	"author": "RED Interactive Agency",
+	"license": "MIT",
+	"dependencies": {
+		"@ff0000-ad-tech/ad-dates": "latest",
+		"@ff0000-ad-tech/ad-legacy": "^1.0.1",
+		"@ff0000-ad-tech/ad-load": "^2.1.0",
+		"@ff0000-ad-tech/ad-utils": "^2.0.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^8.2.2",
+		"eslint": "^4.16.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.5.0",
+		"np": "^2.19.0",
+		"prettier": "^1.10.2"
+	}
+}
