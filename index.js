@@ -1,5 +1,5 @@
 import { agent } from './lib/agent.js'
-import { isDevice, getDevice } from './lib/type.js'
+import { isDevice, getDevice } from './lib/device.js'
 import { isBrowser, getBrowser, getBrowserVersion } from './lib/browser.js'
 import { getBrand, getProduct, getOS, getOSVersion, isOS } from './lib/brandAndOS.js'
 
@@ -40,19 +40,17 @@ export function report() {
 	// 	D.type = 'desktop'
 	// }
 
-	var line = Array(70).join('-')
-	var str = '\n' + line
-	str += '\n AGENT:\n\n\t' + agent + '\n'
-	str += '\n  Brand:\t\t\t' + getBrand()
-	str += '\n  Product:\t\t\t' + getProduct()
-	str += '\n  Type:\t\t\t\t' + getDevice()
-	str += '\n  Os:\t\t\t\t' + getOS() + ' - ' + getOSVersion()
-	str += '\n  Browser:\t\t\t' + getBrowser() + ' - ' + getBrowserVersion()
-	const d = getDimensions()
-	str += '\n  Dimensions: \t\t' + d.width + 'x' + d.height
-	str += '\n  Orientation:\t\t' + getOrientation()
-	// str += '\n  Pixel Ratio:\t\t' + D.pixelRatio
-
-	str += '\n' + line
-	console.log(str)
+	console.log(
+		Array(70).join('-'),
+		'\n AGENT:\n\n\t' + agent + '\n',
+		'\n  Brand:\t\t\t' + getBrand(),
+		'\n  Product:\t\t\t' + getProduct(),
+		'\n  Type:\t\t\t\t' + getDevice(),
+		'\n  Os:\t\t\t\t' + getOS() + ' - ' + getOSVersion(),
+		'\n  Browser:\t\t\t' + getBrowser() + ' - ' + getBrowserVersion(),
+		'\n  Dimensions: \t\t' + getDimensions().width + 'x' + getDimensions().height,
+		'\n  Orientation:\t\t' + getOrientation(),
+		'\n  Pixel Ratio:\t\t' + pixelRatio,
+		'\n' + Array(70).join('-')
+	)
 }
