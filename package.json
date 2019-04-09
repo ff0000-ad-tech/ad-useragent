@@ -7,7 +7,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"pub": "np"
+		"pub": "np",
+		"docs": "jsdoc -c .jsdoc.json",
+		"docs2": "jsdoc2md --template README.hbs -f ./index.js > api.md",
+		"docs3": "jsdoc2md --template README.hbs -c .jsdoc.json --files index.js >> api2.md"
 	},
 	"engines": {
 		"node": ">=9.8.0",
@@ -23,7 +26,9 @@
 		"@ff0000-ad-tech/ad-dates": "latest",
 		"@ff0000-ad-tech/ad-legacy": "^1.2.0",
 		"@ff0000-ad-tech/ad-load": "^2.1.0",
-		"@ff0000-ad-tech/ad-utils": "^2.0.0"
+		"@ff0000-ad-tech/ad-utils": "^2.0.0",
+		"jsdoc": "^3.5.5",
+		"jsdoc-to-markdown": "^4.0.1"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.6",

@@ -1,3 +1,6 @@
+/**
+ * @class ad-useragent
+ */
 import { isDevice, getDevice } from './lib/device.js'
 import { isBrowser, getBrowser, getBrowserVersion } from './lib/browser.js'
 import { getBrand, getProduct, getOS, getOSVersion, isOS } from './lib/brandAndOS.js'
