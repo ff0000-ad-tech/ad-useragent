@@ -18,8 +18,7 @@ export {
 	isOS
 }
 
-/**	
-	@memberOf ad-useragent	
+/**
 	@var {string} agentString
 	@desc
 		Current user agent of browser. 
@@ -27,15 +26,13 @@ export {
 export const agentString = navigator.userAgent
 
 /**	
-	@memberOf ad-useragent	
 	@var {string} pixelRatio
 	@desc
 		Pixel ratio of device viewport. 
 */
 export const pixelRatio = window.devicePixelRatio || 'unknown'
 
-/**	
-	@memberOf ad-useragent	
+/**		
 	@method getOrientation
 	@returns {string}
 	@desc
@@ -46,7 +43,6 @@ export const getOrientation = () => {
 }
 
 /**	
-	@memberOf ad-useragent
 	@method getDimensions
 	@returns {object}	
 	@property {number} width
@@ -65,7 +61,6 @@ export const getDimensions = () => {
 }
 
 /**	
-	@memberOf ad-useragent	
 	@method report
 	@desc
 		Called from within the pipeline, logs out the useragent string & all available pasered data for 

@@ -1,26 +1,22 @@
-[![view on npm](http://img.shields.io/npm/v/example.svg)](https://www.npmjs.org/package/example)
+##### RED Interactive Agency - Ad Technology
 
-## Modules
+[![npm
+(tag)](https://img.shields.io/npm/v/@ff0000-ad-tech%2Fad-useragent.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-useragent)
+[![GitHub
+issues](https://img.shields.io/github/issues/ff0000-ad-tech/ad-useragent.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-useragent)
+[![npm
+downloads](https://img.shields.io/npm/dm/@ff0000-ad-tech%2Fad-useragent.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-useragent)
 
-<dl>
-<dt><a href="#module_ad-useragent">ad-useragent</a></dt>
-<dd></dd>
-<dt><a href="#module_ad-useragent">ad-useragent</a></dt>
-<dd></dd>
-</dl>
+[![GitHub
+contributors](https://img.shields.io/github/contributors/ff0000-ad-tech/ad-useragent.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-useragent/graphs/contributors/)
+[![GitHub
+commit-activity](https://img.shields.io/github/commit-activity/y/ff0000-ad-tech/ad-useragent.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-useragent/commits/master)
+[![npm
+license](https://img.shields.io/npm/l/@ff0000-ad-tech%2Fad-useragent.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-useragent/blob/master/LICENSE)
+[![PRs
+Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-<a name="module_ad-useragent"></a>
-
-## ad-useragent
-<a name="module_ad-useragent"></a>
-
-## ad-useragent
-
-* * *
-
-BRO
-
-&copy; 1942-2016 Muhammad Ali[![view on npm](http://img.shields.io/npm/v/example.svg)](https://www.npmjs.org/package/example)
+# Useragent
 
 ## Classes
 
@@ -31,22 +27,56 @@ BRO
 <dd></dd>
 </dl>
 
+## Members
+
+<dl>
+<dt><a href="#agentString">agentString</a> : <code>string</code></dt>
+<dd><p>Current user agent of browser.</p>
+</dd>
+<dt><a href="#pixelRatio">pixelRatio</a> : <code>string</code></dt>
+<dd><p>Pixel ratio of device viewport.</p>
+</dd>
+<dt><a href="#agentString">agentString</a> : <code>string</code></dt>
+<dd><p>Current user agent of browser.</p>
+</dd>
+<dt><a href="#pixelRatio">pixelRatio</a> : <code>string</code></dt>
+<dd><p>Pixel ratio of device viewport.</p>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#getOrientation">getOrientation()</a> ⇒ <code>string</code></dt>
+<dd><p>Orientaion of device viewport: landscape or portrait.</p>
+</dd>
+<dt><a href="#getDimensions">getDimensions()</a> ⇒ <code>object</code></dt>
+<dd><p>The current dimensions of the device&#39;s viewport, returns an object with a width &amp; height 
+        value that are direct returns of windowWidth and windowHeight.</p>
+</dd>
+<dt><a href="#report">report()</a></dt>
+<dd><p>Called from within the pipeline, logs out the useragent string &amp; all available pasered data for 
+        brand, product, device, OS &amp; version, browser &amp; version, dimensions, orientation, &amp; pixel ratio</p>
+</dd>
+<dt><a href="#getOrientation">getOrientation()</a> ⇒ <code>string</code></dt>
+<dd><p>Orientaion of device viewport: landscape or portrait.</p>
+</dd>
+<dt><a href="#getDimensions">getDimensions()</a> ⇒ <code>object</code></dt>
+<dd><p>The current dimensions of the device&#39;s viewport, returns an object with a width &amp; height 
+        value that are direct returns of windowWidth and windowHeight.</p>
+</dd>
+<dt><a href="#report">report()</a></dt>
+<dd><p>Called from within the pipeline, logs out the useragent string &amp; all available pasered data for 
+        brand, product, device, OS &amp; version, browser &amp; version, dimensions, orientation, &amp; pixel ratio</p>
+</dd>
+</dl>
+
 <a name="ad-useragent"></a>
 
 ## ad-useragent
 **Kind**: global class  
 
 * [ad-useragent](#ad-useragent)
-    * [.agentString](#ad-useragent.agentString) : <code>string</code>
-    * [.pixelRatio](#ad-useragent.pixelRatio) : <code>string</code>
-    * [.agentString](#ad-useragent.agentString) : <code>string</code>
-    * [.pixelRatio](#ad-useragent.pixelRatio) : <code>string</code>
-    * [.getOrientation()](#ad-useragent.getOrientation) ⇒ <code>string</code>
-    * [.getDimensions()](#ad-useragent.getDimensions) ⇒ <code>object</code>
-    * [.report()](#ad-useragent.report)
-    * [.getOrientation()](#ad-useragent.getOrientation) ⇒ <code>string</code>
-    * [.getDimensions()](#ad-useragent.getDimensions) ⇒ <code>object</code>
-    * [.report()](#ad-useragent.report)
     * [.getBrand()](#ad-useragent.getBrand) ⇒ <code>string</code>
     * [.getProduct()](#ad-useragent.getProduct) ⇒ <code>string</code>
     * [.getOS()](#ad-useragent.getOS) ⇒ <code>string</code>
@@ -58,84 +88,6 @@ BRO
     * [.isDevice(type)](#ad-useragent.isDevice) ⇒ <code>boolean</code>
     * [.getDevice()](#ad-useragent.getDevice) ⇒ <code>string</code>
 
-<a name="ad-useragent.agentString"></a>
-
-### ad-useragent.agentString : <code>string</code>
-Current user agent of browser.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.pixelRatio"></a>
-
-### ad-useragent.pixelRatio : <code>string</code>
-Pixel ratio of device viewport.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.agentString"></a>
-
-### ad-useragent.agentString : <code>string</code>
-Current user agent of browser.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.pixelRatio"></a>
-
-### ad-useragent.pixelRatio : <code>string</code>
-Pixel ratio of device viewport.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getOrientation"></a>
-
-### ad-useragent.getOrientation() ⇒ <code>string</code>
-Orientaion of device viewport: landscape or portrait.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getDimensions"></a>
-
-### ad-useragent.getDimensions() ⇒ <code>object</code>
-The current dimensions of the device's viewport, returns an object with a width & height 
-		value that are direct returns of windowWidth and windowHeight.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| width | <code>number</code> | window inner-width |
-| height | <code>number</code> | window inner-height |
-
-<a name="ad-useragent.report"></a>
-
-### ad-useragent.report()
-Called from within the pipeline, logs out the useragent string & all available pasered data for 
-		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getOrientation"></a>
-
-### ad-useragent.getOrientation() ⇒ <code>string</code>
-Orientaion of device viewport: landscape or portrait.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getDimensions"></a>
-
-### ad-useragent.getDimensions() ⇒ <code>object</code>
-The current dimensions of the device's viewport, returns an object with a width & height 
-		value that are direct returns of windowWidth and windowHeight.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| width | <code>number</code> | window inner-width |
-| height | <code>number</code> | window inner-height |
-
-<a name="ad-useragent.report"></a>
-
-### ad-useragent.report()
-Called from within the pipeline, logs out the useragent string & all available pasered data for 
-		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
 <a name="ad-useragent.getBrand"></a>
 
 ### ad-useragent.getBrand() ⇒ <code>string</code>
@@ -271,16 +223,6 @@ The device type as a string, possible values are:
 **Kind**: global class  
 
 * [ad-useragent](#ad-useragent)
-    * [.agentString](#ad-useragent.agentString) : <code>string</code>
-    * [.pixelRatio](#ad-useragent.pixelRatio) : <code>string</code>
-    * [.agentString](#ad-useragent.agentString) : <code>string</code>
-    * [.pixelRatio](#ad-useragent.pixelRatio) : <code>string</code>
-    * [.getOrientation()](#ad-useragent.getOrientation) ⇒ <code>string</code>
-    * [.getDimensions()](#ad-useragent.getDimensions) ⇒ <code>object</code>
-    * [.report()](#ad-useragent.report)
-    * [.getOrientation()](#ad-useragent.getOrientation) ⇒ <code>string</code>
-    * [.getDimensions()](#ad-useragent.getDimensions) ⇒ <code>object</code>
-    * [.report()](#ad-useragent.report)
     * [.getBrand()](#ad-useragent.getBrand) ⇒ <code>string</code>
     * [.getProduct()](#ad-useragent.getProduct) ⇒ <code>string</code>
     * [.getOS()](#ad-useragent.getOS) ⇒ <code>string</code>
@@ -292,84 +234,6 @@ The device type as a string, possible values are:
     * [.isDevice(type)](#ad-useragent.isDevice) ⇒ <code>boolean</code>
     * [.getDevice()](#ad-useragent.getDevice) ⇒ <code>string</code>
 
-<a name="ad-useragent.agentString"></a>
-
-### ad-useragent.agentString : <code>string</code>
-Current user agent of browser.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.pixelRatio"></a>
-
-### ad-useragent.pixelRatio : <code>string</code>
-Pixel ratio of device viewport.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.agentString"></a>
-
-### ad-useragent.agentString : <code>string</code>
-Current user agent of browser.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.pixelRatio"></a>
-
-### ad-useragent.pixelRatio : <code>string</code>
-Pixel ratio of device viewport.
-
-**Kind**: static property of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getOrientation"></a>
-
-### ad-useragent.getOrientation() ⇒ <code>string</code>
-Orientaion of device viewport: landscape or portrait.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getDimensions"></a>
-
-### ad-useragent.getDimensions() ⇒ <code>object</code>
-The current dimensions of the device's viewport, returns an object with a width & height 
-		value that are direct returns of windowWidth and windowHeight.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| width | <code>number</code> | window inner-width |
-| height | <code>number</code> | window inner-height |
-
-<a name="ad-useragent.report"></a>
-
-### ad-useragent.report()
-Called from within the pipeline, logs out the useragent string & all available pasered data for 
-		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getOrientation"></a>
-
-### ad-useragent.getOrientation() ⇒ <code>string</code>
-Orientaion of device viewport: landscape or portrait.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-<a name="ad-useragent.getDimensions"></a>
-
-### ad-useragent.getDimensions() ⇒ <code>object</code>
-The current dimensions of the device's viewport, returns an object with a width & height 
-		value that are direct returns of windowWidth and windowHeight.
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| width | <code>number</code> | window inner-width |
-| height | <code>number</code> | window inner-height |
-
-<a name="ad-useragent.report"></a>
-
-### ad-useragent.report()
-Called from within the pipeline, logs out the useragent string & all available pasered data for 
-		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
-
-**Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
 <a name="ad-useragent.getBrand"></a>
 
 ### ad-useragent.getBrand() ⇒ <code>string</code>
@@ -499,9 +363,85 @@ The device type as a string, possible values are:
 		</codeblock>
 
 **Kind**: static method of [<code>ad-useragent</code>](#ad-useragent)  
+<a name="agentString"></a>
+
+## agentString : <code>string</code>
+Current user agent of browser.
+
+**Kind**: global variable  
+<a name="pixelRatio"></a>
+
+## pixelRatio : <code>string</code>
+Pixel ratio of device viewport.
+
+**Kind**: global variable  
+<a name="agentString"></a>
+
+## agentString : <code>string</code>
+Current user agent of browser.
+
+**Kind**: global variable  
+<a name="pixelRatio"></a>
+
+## pixelRatio : <code>string</code>
+Pixel ratio of device viewport.
+
+**Kind**: global variable  
+<a name="getOrientation"></a>
+
+## getOrientation() ⇒ <code>string</code>
+Orientaion of device viewport: landscape or portrait.
+
+**Kind**: global function  
+<a name="getDimensions"></a>
+
+## getDimensions() ⇒ <code>object</code>
+The current dimensions of the device's viewport, returns an object with a width & height 
+		value that are direct returns of windowWidth and windowHeight.
+
+**Kind**: global function  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| width | <code>number</code> | window inner-width |
+| height | <code>number</code> | window inner-height |
+
+<a name="report"></a>
+
+## report()
+Called from within the pipeline, logs out the useragent string & all available pasered data for 
+		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
+
+**Kind**: global function  
+<a name="getOrientation"></a>
+
+## getOrientation() ⇒ <code>string</code>
+Orientaion of device viewport: landscape or portrait.
+
+**Kind**: global function  
+<a name="getDimensions"></a>
+
+## getDimensions() ⇒ <code>object</code>
+The current dimensions of the device's viewport, returns an object with a width & height 
+		value that are direct returns of windowWidth and windowHeight.
+
+**Kind**: global function  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| width | <code>number</code> | window inner-width |
+| height | <code>number</code> | window inner-height |
+
+<a name="report"></a>
+
+## report()
+Called from within the pipeline, logs out the useragent string & all available pasered data for 
+		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
+
+**Kind**: global function  
 
 * * *
 
-BRO
-
-&copy; 1942-2016 Muhammad Ali
+&copy; 2019 RED
