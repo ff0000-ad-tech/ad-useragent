@@ -10,7 +10,7 @@
 		"pub": "np",
 		"docs": "jsdoc -c .jsdoc.json",
 		"docs2": "jsdoc2md --template README.hbs -f ./index.js > api.md",
-		"docs3": "jsdoc2md --template README.hbs -c .jsdoc.json --files index.js >> api2.md"
+		"docs3": "jsdoc2md --template README.hbs -c .jsdoc.json --files index.js >> README.md"
 	},
 	"engines": {
 		"node": ">=9.8.0",
