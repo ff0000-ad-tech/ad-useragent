@@ -1,8 +1,6 @@
 {
-	"plugins": [],
 	"recurseDepth": 10,
 	"source": {
-		"include": ["./index.js", "./lib"],
 		"includePattern": ".+\\.js(doc|x)?$"
 	},
 	"sourceType": "module",
@@ -10,8 +8,5 @@
 		"allowUnknownTags": true,
 		"dictionaries": ["jsdoc", "closure"]
 	},
-	"templates": {
-		"cleverLinks": false,
-		"monospaceLinks": false
-	}
+	"plugins": ["node_modules/jsdoc/plugins/codeblock.js"]
 }

@@ -1,5 +1,6 @@
 /**
- * @class ad-useragent
+ * @namespace ad-useragent
+ * @desc Collection of methods and vars that parse the useragent to reveal information about the Device on which the code is currently executing
  */
 import { isDevice, getDevice } from './lib/device.js'
 import { isBrowser, getBrowser, getBrowserVersion } from './lib/browser.js'
@@ -21,7 +22,11 @@ export {
 /**
 	@var {string} agentString
 	@desc
-		Current user agent of browser. 
+		Current user agent of browser, unmodified or parsed. 
+		<codeblock>
+			import { agentString } from 'ad-useragent'
+			console.log(agentString) // 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'
+		</codeblock>
 */
 export const agentString = navigator.userAgent
 
@@ -29,6 +34,10 @@ export const agentString = navigator.userAgent
 	@var {string} pixelRatio
 	@desc
 		Pixel ratio of device viewport. 
+		<codeblock>
+			import { pixelRatio } from 'ad-useragent'
+			console.log(pixelRatio) // 1
+		</codeblock>
 */
 export const pixelRatio = window.devicePixelRatio || 'unknown'
 
@@ -37,6 +46,10 @@ export const pixelRatio = window.devicePixelRatio || 'unknown'
 	@returns {string}
 	@desc
 		Orientaion of device viewport: landscape or portrait. 
+		<codeblock>
+			import { getOrientation } from 'ad-useragent'
+			getOrientation() // 'landscape'
+		</codeblock>
 */
 export const getOrientation = () => {
 	return window.innerWidth > window.innerHeight ? 'landscape' : 'portrait'
@@ -52,6 +65,10 @@ export const getOrientation = () => {
 	@desc
 		The current dimensions of the device's viewport, returns an object with a width & height 
 		value that are direct returns of windowWidth and windowHeight.
+		<codeblock>
+			import { getDimensions } from 'ad-useragent'
+			getDimensions() // '{ width: 1024, height: 768 }'
+		</codeblock>
 */
 export const getDimensions = () => {
 	return {
@@ -65,6 +82,10 @@ export const getDimensions = () => {
 	@desc
 		Called from within the pipeline, logs out the useragent string & all available pasered data for 
 		brand, product, device, OS & version, browser & version, dimensions, orientation, & pixel ratio
+		<codeblock>
+			import { report } from 'ad-useragent'
+			report() // full output in console
+		</codeblock>
 */
 export const report = () => {
 	console.log(

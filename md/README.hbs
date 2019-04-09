@@ -18,8 +18,18 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 # Useragent
 
-{{>main}}
+{{#namespace}}
+{{description}}
+{{/namespace}}
+
 
 * * *
 
-&copy; 2019 RED
+{{#identifiers}}
+{{#ifCond name "!=" "ad-useragent"}}
+{{>docs}}
+{{/ifCond}}
+{{/identifiers}}
+
+
+* * *
