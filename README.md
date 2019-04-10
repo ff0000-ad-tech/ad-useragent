@@ -18,7 +18,21 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 
 # Useragent
 
-Collection of methods and vars that parse the useragent to reveal information about the Device on which the code is currently executing
+Collection of methods and vars that parse the useragent to reveal information about the device
+ 		on which the code is currently executing. Developed for the digital ad environment, lightwieght is the focus
+		without sacrificing accuracy. If utilizing the entire package, it still comes in at ~2k babel/minified.
+		Available information:
+		<ul>
+			<li>device type</li>
+			<li>device brand</li>
+			<li>browser type</li>
+			<li>browser version</li>
+			<li>operating system</li>
+			<li>operating system version</li>
+			<li>orientation of the viewport</li>
+			<li>pixel ratio</li>
+		</ul>
+
 
 
 * * *
@@ -207,8 +221,18 @@ The device type as a string, possible values are:
 		Windows > 8 currently returns tablet, currently no way to differentiate from desktop. 
 		<pre class="sunlight-highlight-javascript">
 import { getDevice } from 'ad-useragent'
-const deviceType = getDevice() // 'desktop'
+getDevice() // 'desktop'
 </pre>
+
+**Kind**: global function  
+<a name="isDualGestureIE"></a>
+
+## isDualGestureIE() ⇒ <code>boolean</code>
+Special test case method. When on a hybrid tablet-laptop running Windows 7 or 8 using Internet Explorer 11 or under,
+		<code>getDevice()</code> will return "tablet", however that can lead to conflicting desired results when wanting mouse based
+		interactions rather than touch. 
+		<br>
+		NOTE: This test required the entire package to test against the device, os, os version, browser, and browser version
 
 **Kind**: global function  
 

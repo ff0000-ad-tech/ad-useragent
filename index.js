@@ -1,6 +1,20 @@
 /**
- * @namespace ad-useragent
- * @desc Collection of methods and vars that parse the useragent to reveal information about the Device on which the code is currently executing
+	@namespace ad-useragent
+	@desc 
+		Collection of methods and vars that parse the useragent to reveal information about the device
+ 		on which the code is currently executing. Developed for the digital ad environment, lightwieght is the focus
+		without sacrificing accuracy. If utilizing the entire package, it still comes in at ~2k babel/minified.
+		Available information:
+		<ul>
+			<li>device type</li>
+			<li>device brand</li>
+			<li>browser type</li>
+			<li>browser version</li>
+			<li>operating system</li>
+			<li>operating system version</li>
+			<li>orientation of the viewport</li>
+			<li>pixel ratio</li>
+		</ul>
  */
 import { isDevice, getDevice } from './lib/device.js'
 import { isBrowser, getBrowser, getBrowserVersion } from './lib/browser.js'
