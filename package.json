@@ -1,13 +1,14 @@
 {
-	"name": "@ff0000-ad-tech/ad-external",
+	"name": "@ff0000-ad-tech/ad-useragent",
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "3.1.0",
+	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"pub": "np"
+		"pub": "np",
+		"docs": "jsdoc2md --template md/README.hbs -c md/.jsdoc.json --no-cache --helper md/helper.js --files index.js lib/* > README.md"
 	},
 	"engines": {
 		"node": ">=9.8.0",
@@ -15,7 +16,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ff0000-ad-tech/ad-external.git"
+		"url": "https://github.com/ff0000-ad-tech/ad-useragent.git"
 	},
 	"author": "RED Interactive Agency",
 	"license": "MIT",
@@ -23,7 +24,16 @@
 		"@ff0000-ad-tech/ad-dates": "latest",
 		"@ff0000-ad-tech/ad-legacy": "^1.2.0",
 		"@ff0000-ad-tech/ad-load": "^2.1.0",
-		"@ff0000-ad-tech/ad-utils": "^2.0.0"
+		"@ff0000-ad-tech/ad-utils": "^2.0.0",
+		"jsdoc-to-markdown": "^4.0.1",
+		"babel-core": "^6.26.3",
+		"babel-plugin-dynamic-import-webpack": "^1.1.0",
+		"babel-plugin-syntax-dynamic-import": "^6.18.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"ink-docstrap": "git+https://github.com/ff0000-ad-tech/docstrap.git",
+		"jsdoc": "git+https://github.com/ff0000-ad-tech/jsdoc.git",
+		"jsdoc-babel": "^0.3.0",
+		"jsdoc-npmpackage-tag": "git+https://github.com/ff0000-ad-tech/jsdoc-npmpackage-tag.git"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.6",
