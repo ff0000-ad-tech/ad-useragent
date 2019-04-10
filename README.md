@@ -230,9 +230,15 @@ getDevice() // 'desktop'
 ## isDualGestureIE() ⇒ <code>boolean</code>
 Special test case method. When on a hybrid tablet-laptop running Windows 7 or 8 using Internet Explorer 11 or under,
 		<code>getDevice()</code> will return "tablet", however that can lead to conflicting desired results when wanting mouse based
-		interactions rather than touch. 
-		<br>
+		interactions rather than touch. Run this <i>BEFORE</i> using <code>getDevice()</code> as it will re-assign device type to
+		'desktop' if all conditions are met.
+		<br><br>
 		NOTE: This test required the entire package to test against the device, os, os version, browser, and browser version
+		<pre class="sunlight-highlight-javascript">
+import { isDualGestureIE, getDevice } from 'ad-useragent'
+isDualGestureIE()
+getDevice() // 'desktop'
+</pre>
 
 **Kind**: global function  
 
