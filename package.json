@@ -8,7 +8,7 @@
 	"main": "index.js",
 	"scripts": {
 		"pub": "np",
-		"docs": "jsdoc2md --template md/README.hbs -c md/.jsdoc.json --no-cache --helper md/helper.js --files index.js lib/* > README.md"
+		"docs": "node md/docs_to_md.js"
 	},
 	"engines": {
 		"node": ">=9.8.0",
@@ -33,7 +33,8 @@
 		"ink-docstrap": "git+https://github.com/ff0000-ad-tech/docstrap.git",
 		"jsdoc": "git+https://github.com/ff0000-ad-tech/jsdoc.git",
 		"jsdoc-babel": "^0.3.0",
-		"jsdoc-npmpackage-tag": "git+https://github.com/ff0000-ad-tech/jsdoc-npmpackage-tag.git"
+		"jsdoc-npmpackage-tag": "git+https://github.com/ff0000-ad-tech/jsdoc-npmpackage-tag.git",
+		"jsdoc-to-md-plugin": "git+https://github.com/ff0000-ad-tech/jsdoc-to-md-plugin.git"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.6",

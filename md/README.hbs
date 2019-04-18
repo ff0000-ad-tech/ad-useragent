@@ -22,6 +22,11 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 {{>description}}
 {{/namespace}}
 
+{{#identifiers}}
+{{#ifCond name "!=" "ad-useragent"}}
+{{>member-index-grouped}}
+{{/ifCond}}
+{{/identifiers}}
 
 * * *
 
@@ -30,6 +35,5 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 {{>docs}}
 {{/ifCond}}
 {{/identifiers}}
-
 
 * * *
