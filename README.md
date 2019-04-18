@@ -21,19 +21,24 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 Collection of methods and vars that parse the useragent to reveal information about the device
  		on which the code is currently executing. Developed for the digital ad environment, lightwieght is the focus
 		without sacrificing accuracy. If utilizing the entire package, it still comes in at ~2k babel/minified.
-		Available information:
-		<ul>
-			<li>device type</li>
-			<li>device brand</li>
-			<li>browser type</li>
-			<li>browser version</li>
-			<li>operating system</li>
-			<li>operating system version</li>
-			<li>orientation of the viewport</li>
-			<li>pixel ratio</li>
-		</ul>
 
 
+* [agentString](#agentString) : <code>string</code>
+* [pixelRatio](#pixelRatio) : <code>string</code>
+* [getOrientation()](#getOrientation) ⇒ <code>string</code>
+* [getDimensions()](#getDimensions) ⇒ <code>object</code>
+* [report()](#report)
+* [getBrand()](#getBrand) ⇒ <code>string</code>
+* [getProduct()](#getProduct) ⇒ <code>string</code>
+* [getOS()](#getOS) ⇒ <code>string</code>
+* [getOSVersion()](#getOSVersion) ⇒ <code>string</code>
+* [isOS()](#isOS) ⇒ <code>boolean</code>
+* [isBrowser(name)](#isBrowser) ⇒ <code>boolean</code>
+* [getBrowser()](#getBrowser) ⇒ <code>string</code>
+* [getBrowserVersion()](#getBrowserVersion) ⇒ <code>string</code>
+* [isDevice(type)](#isDevice) ⇒ <code>boolean</code>
+* [getDevice()](#getDevice) ⇒ <code>string</code>
+* [isDualGestureIE()](#isDualGestureIE) ⇒ <code>boolean</code>
 
 * * *
 
@@ -241,6 +246,5 @@ getDevice() // 'desktop'
 </pre>
 
 **Kind**: global function  
-
 
 * * *
