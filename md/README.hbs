@@ -23,17 +23,17 @@ Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-squ
 {{/namespace}}
 
 {{#identifiers}}
-{{#ifCond name "!=" "ad-useragent"}}
+{{#if ("!==" name "ad-useragent")}}
 {{>member-index-grouped}}
-{{/ifCond}}
+{{/if}}
 {{/identifiers}}
 
 * * *
 
 {{#identifiers}}
-{{#ifCond name "!=" "ad-useragent"}}
+{{#if ("!==" name "ad-useragent")}}
 {{>docs}}
-{{/ifCond}}
+{{/if}}
 {{/identifiers}}
 
 * * *
