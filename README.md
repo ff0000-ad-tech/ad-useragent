@@ -34,8 +34,6 @@ Collection of methods and vars that parse the useragent to reveal information ab
 * [getDevice()](#getDevice) ⇒ <code>string</code>
 * [isDualGestureIE()](#isDualGestureIE) ⇒ <code>boolean</code>
 
-* * *
-
 <a name="agentString"></a>
 
 ## agentString : <code>string</code>
@@ -56,6 +54,10 @@ console.log(pixelRatio) // 1
 </pre>
 
 **Kind**: global variable  
+<a name="ad-useragent"></a>
+
+## ad-useragent : <code>object</code>
+**Kind**: global namespace  
 <a name="getOrientation"></a>
 
 ## getOrientation() ⇒ <code>string</code>
