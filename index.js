@@ -87,17 +87,15 @@ export const getDimensions = () => {
 		</codeblock>
 */
 export const report = () => {
-	console.log(
-		Array(70).join('-'),
-		'\n useragent:\n\n\t' + agentString + '\n',
-		'\n  Brand:\t\t\t' + getBrand(),
-		'\n  Product:\t\t\t' + getProduct(),
-		'\n  Device:\t\t\t' + getDevice(),
-		'\n  Os:\t\t\t\t' + getOS() + ' - ' + getOSVersion(),
-		'\n  Browser:\t\t\t' + getBrowser() + ' - ' + getBrowserVersion(),
-		'\n  Dimensions: \t\t' + getDimensions().width + 'x' + getDimensions().height,
-		'\n  Orientation:\t\t' + getOrientation(),
-		'\n  Pixel Ratio:\t\t' + pixelRatio,
-		'\n' + Array(70).join('-')
-	)
+	function create(br) {
+		return `useragent:${br}${br}\t${agentString + br + br} Brand:\t\t\t${getBrand() +
+			br} Product:\t\t\t${getProduct() + br} Device:\t\t\t${getDevice() +
+			br} Os:\t\t\t\t${getOS()} - ${getOSVersion() + br} Browser:\t\t\t${getBrowser()} - ${getBrowserVersion() +
+			br} Dimensions:\t\t${getDimensions().width}x${getDimensions().height +
+			br} Orientation:\t\t${getOrientation() + br} Pixel Ratio:\t\t${pixelRatio}`
+	}
+	const line = Array(70).join('-')
+	console.log(line + '\n', create('\n'), '\n' + line)
+
+	return create('<br>')
 }
